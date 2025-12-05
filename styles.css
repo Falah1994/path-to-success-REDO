@@ -1,0 +1,177 @@
+/* CSS BY (The Worlds Most Beautiful) */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/* CSS RESET */
+* { box-sizing: border-box; margin:0; padding:0; }
+
+/* ROOT VARIABLES */
+:root{
+  --teal: #4CA7C0;
+  --purple: #484FB7;
+  --lavender: #6B8FE7;
+  --yellow: #E9BB57;
+  --pink: #D9526F;
+  --dark: #1E1E1E;
+  --white: #ffffff;
+  --outer-like: #6B8FE7;
+}
+
+/* GLOBAL STYLES (mobile first/small) */
+html, body {
+  background: var(--lavender);
+  font-family: 'Inter', sans-serif;
+  width: 100%;
+  min-height: 100%;
+}
+
+body{
+  display: block;
+  padding: 20px 0;
+  margin: 0;
+  width: 100%;
+}
+
+/* PAGE WRAPPER: purple  */
+#page-wrapper{
+  width: 360px;
+  background: var(--purple);
+  padding: 10px 0px 24px;
+  border-radius: 8px;
+  margin:18px 0px;
+  padding:12px;
+  background: #D9526F;
+  border-radius:0px;
+  color:var(--white);
+  width: 100%;
+}
+.why-title{ font-family:'Kavoon'; font-size:1.2em; margin:6px 0 10px; color:var(--white); }
+.why-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+}
+.why-box{
+  padding:10px;
+  border-radius:8px;
+  text-align:center;
+  font-weight:700;
+  font-size:0.95em;
+}
+.why-box.teal{ background: var(--teal); color: var(--white); }
+.why-box.outer-bg-like{ background: var(--outer-like); color: var(--white); }
+.why-box.gold{ background: var(--yellow); color: var(--dark); }
+.why-box.white{ background: var(--white); color: var(--dark); }
+
+/* PRICING */
+.price-block{
+  width: 100%;
+  margin: 16px 0;
+  padding: 0;
+  background: none;
+  border-radius: 0;
+  text-align: left;
+}
+
+.price-title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-family:'Kavoon';
+  color: var(--yellow);
+  margin: 16px 0 4px 12px;
+  font-size:1.05em;
+}
+
+.price-table {
+  width: 70%;
+  border-collapse: collapse;
+  border: 3px solid var(--yellow);
+  border-radius: 0;
+  table-layout: fixed;
+  margin: 0 auto;
+}
+
+.price-table thead tr th {
+  background: var(--yellow);
+  color: var(--dark);
+  font-weight: 800;
+  padding: 6px 6px;
+  text-align: left;
+}
+
+.price-table th:first-child {
+  width: 50%;
+}
+.price-table th:last-child {
+  width: 50%;
+}
+
+.price-table th,
+.price-table td {
+  border: 1px solid var(--yellow);
+}
+
+.price-table tbody tr td {
+  background: var(--white);
+  color: var(--dark);
+  padding: 6px 6px;
+  font-weight: 700;
+}
+
+/* CTA */
+.cta{
+  width: 100%;
+  margin: 20px 0;
+  padding: 18px 16px;
+
+  background: var(--pink);
+  color: var(--white);
+  border-radius:0px;
+}
+.cta h2{ font-family:'Kavoon'; font-size:1.15em; margin-bottom:8px; }
+.cta-text{ font-size:0.95em; line-height:1.4; color: rgba(255,255,255,0.95); margin-bottom:10px; }
+
+
+.schedule-btn{
+  width: calc(100% - 12px);
+  display:block;
+  margin: 6px;
+  padding:12px;
+  border-radius:12px;
+  background: var(--white);
+  color: var(--dark);
+  border:none;
+  font-weight:800;
+
+ 
+  box-shadow: 6px 12px 18px rgba(0, 0, 0, 0.3), 7px 1px 10px rgba(0, 0, 0, 0.2);
+
+  cursor:pointer;
+}
+
+/* FOOTER */
+.site-foot{
+  margin: 12px 6px 30px;
+  color: var(--white);
+  text-align:center;
+  font-size:0.85em;
+  display:flex;
+  justify-content: center;
+  gap: 60px;
+  position: relative;
+  top: 10px;
+}
+
+.site-foot small:last-child {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width:480px){
+  #page-wrapper{ width: 100%; padding:12px; border-radius:6px; }
+  .card{ padding:12px; gap:10px; }
+  .card-body p{ font-size:0.92em; }
+  .why-grid{ grid-template-columns: 1fr 1fr; }
+}
