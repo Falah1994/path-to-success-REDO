@@ -39,6 +39,106 @@ body{
   background: var(--purple);
   padding: 10px 0px 24px;
   border-radius: 8px;
+
+  margin: 0 auto;
+
+
+}
+
+/* TYPOGRAPHY */
+h1{ font-family:'Kavoon', cursive; font-size:3em; margin-bottom:6px; }
+.menu-title{ font-family:'Kavoon', cursive; font-size:1.5em; }
+h2{ font-family:'Kavoon', cursive; font-size:2em; }
+h3{ font-family:'Kavoon', cursive; font-size:1.5em; }
+h4{ font-size:1.15em; font-weight:700; }
+
+/* HERO */
+.hero{
+  text-align:center;
+  color: var(--white);
+  padding: 14px 8px;
+  margin-bottom: 10px;
+  background: var(--purple);
+}
+.hero .subtitle{ font-size:0.9em; color: rgba(255,255,255,0.9); margin-top:4px; }
+
+/* MENU BOX */
+.menu-box{
+  background: var(--yellow);
+  padding: 18px 16px;
+  width: 88%;
+  margin: 14px auto 22px;
+
+  border-radius: 8px;
+  text-align:center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+.menu-box .menu-title{ color: var(--purple); margin-bottom:10px; }
+
+
+.menu-link{
+  display:block;
+  background: var(--white);
+  color: var(--purple);
+  padding: 12px 12px;        
+  margin: 10px auto;          
+  width: 85%;
+  border-radius: 0;
+  text-decoration:none;
+  font-weight:900;            
+  font-size: 1em;            
+}
+
+
+.menu-cta{
+  display:block;
+  background: var(--white);
+  color: var(--purple);
+  padding: 12px 12px;        
+  margin: 10px auto;          
+  width: 85%;
+  border:none;
+  border-radius:0;
+  font-weight: 900;
+  font-size: 1em;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: -0.3px;
+  line-height: 1.05;
+  cursor:pointer;
+}
+
+
+/* SECTION HEADERS */
+.section-header{ margin-top: 12px; margin-bottom: 6px; color: var(--white); text-align:left; padding-left:6px; }
+.section-header.small{ margin-top: 18px; }
+.section-header h2{ font-size:1.6em; margin-bottom:6px; }
+.section-sub{
+  color: var(--yellow);
+  font-size:1.05em;
+  margin-left:6px;
+  font-weight:700;
+}
+
+/* CARD */
+.card{
+  display:flex;
+  flex-direction: column;
+  gap:12px;
+  align-items:flex-start;
+  text-align:left;
+  background:var(--white);
+  width: 80%;                        
+  margin: 16px auto;                
+  padding: 20px 18px;                  
+  border-radius:10px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+}
+.card-icon img{ width:64px; height:64px;  display:block; margin-bottom: 0; padding:0; }
+.card-body h4{ color: var(--purple); font-family:'Kavoon'; font-size:1.15em; margin-bottom:6px; }
+.card-body p{ color:var(--dark); font-size:0.92em; line-height:1.45; }
+
+/* WHY CHOOSE US */
+.why-wrap{
   margin:18px 0px;
   padding:12px;
   background: #D9526F;
@@ -175,3 +275,4 @@ body{
   .card-body p{ font-size:0.92em; }
   .why-grid{ grid-template-columns: 1fr 1fr; }
 }
+
